@@ -18,7 +18,7 @@ a {
     display: flex;
     justify-content: space-around;
     padding: 30px;
-    max-width: 1440px;
+    max-width: 2800px;
     margin: 0 auto;
 }
 
@@ -39,12 +39,9 @@ a {
     color: darkred;
     font-size: 20px;
     padding: 10px 20px;
-    border-radius: 50px;
     transition: 0.2s ease-in-out;
-
 }
 
 .cabecalho nav  li a:hover {
-    background-color: red;
-    color: black;
+    color: rgb(5, 170, 115);
 }
