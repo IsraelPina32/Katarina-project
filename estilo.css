@@ -13,6 +13,7 @@ a {
 }
 
 
+/* -----------Header-------*/ 
 .cabecalho {
     background-color: black;
     display: flex;
@@ -46,7 +47,7 @@ a {
     color: rgb(5, 170, 115);
 }
 
-
+/* -----------Home-------*/ 
 .contanier {
     height: 100vh;
     width: 100%;
@@ -79,7 +80,7 @@ h1{
     padding: 5px;
 }
 
-.btn-home{
+.contanier .btn-home{
      height: 30px;
      width: 15%;
      line-height: 2;
@@ -97,20 +98,61 @@ h1{
      font-size: 15px;
      transition: 0.5s all ease-in-out;
 }
-.btn-home:hover{
+.contanier .btn-home:hover{
     transform: scale(1.1);
     color: red;
     background-color: transparent;
     border: 1px solid red;
     transition: 0.5s all ease-in-out;
-
+    cursor: pointer;
 }
-
 
 p{  
     font-family: 'Lobster', cursive;
     color: #937341;
     font-size: 2.0rem;
     margin: 0.5vh;
-    font-size: 1.5rem;
+    font-size: 1rem;
+}
+
+/* -----------Conteudo Da Modal-------*/ 
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 1000vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(52, 52, 50, 0.7);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.conteudo-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    border-radius: 5px;
+    gap: 5px;
+}
+
+.fechar-modal {
+    background-color: black;
+    color: red;
+    width: 35px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.modal inframe {
+    border-width: 0;
+    width: 640px;
+    height: 360px;
+}
+
+.modal.aberto {
+    opacity: 1;
+    visibility: visible;
 }
